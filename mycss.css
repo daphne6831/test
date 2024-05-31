@@ -1,0 +1,487 @@
+/* web ver */
+/* header design */
+
+/* header color */
+.redheader {
+    background-color: #EC3C2C;
+    box-shadow: 0px 5px 15px 0px rgba(84,28,4,0.38);
+-webkit-box-shadow: 0px 5px 15px 0px rgba(84,28,4,0.38);
+-moz-box-shadow: 0px 5px 15px 0px rgba(84,28,4,0.38);
+}
+
+/* nav_button and nav_logo margin */
+#navButton {
+    height: 117px;
+    margin-right: 50px;
+
+    font-family: "Rammetto One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+
+#navLogo {
+    margin-left: 40px;
+}
+
+/* 第一個按鈕邊緣為0 */
+#navButton>:first-child {
+    margin: 0;
+}
+
+/* nav_button */
+#navButton button {
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px;
+    text-align: center;
+    margin-inline-start: 60px;
+
+}
+
+/* nav_button hover*/
+#navButton button:hover {
+    box-shadow: 0 5px;
+    padding-bottom: 0px;
+}
+
+/* web.ver1 navbar hidden */
+/* rwd */
+@media (max-width:780px) {
+    .hide\@\<780 {
+        display: hidden;
+    }
+}
+
+
+
+
+
+/* mobile ver navbar */
+/* header design */
+/* hamburger bar button*/
+.navbar-toggler {
+    background-color: rgba(0, 0, 0, 0);
+    border: 5px solid;
+    border-color: rgba(0, 0, 0, 0);
+    box-sizing: border-box;
+    display: flex;
+
+}
+
+/* 漢堡菜單鼠標滑行方框效果 */
+.navbar-toggler:hover {
+    filter: brightness(0) saturate(100%) invert(99%) sepia(0%) saturate(7500%) hue-rotate(246deg) brightness(101%) contrast(103%);
+
+    border-color: white;
+    border: 5px solid;
+
+}
+
+/* 漢堡菜單裡的按鈕文字 */
+.offcanvasbodybutton {
+    font-family: "Rammetto One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+
+
+}
+
+/* 漢堡菜單裡的按紐樣式 */
+.offcanvasbodybutton button {
+    background-color: #EC3C2C;
+    /* width: 380px; */
+    height: 100px;
+    color: white;
+    padding: 30px;
+    border: 0px;
+}
+
+/* 漢堡菜單按鈕鼠標滑行效果 */
+.offcanvasbodybutton button:hover {
+    background-color: white;
+
+    color: #EC3C2C;
+    padding: 30px;
+}
+
+/* section-1 卡片區 */
+/* new menu新菜單卡片設計 */
+.slide {
+
+    border: 5px solid;
+    border-color: #EC3C2C;
+    box-shadow: 7px 7px #EC3C2C !important;
+    margin-left: 0px !important;
+    margin-right: 27px !important;
+    padding-top: 50px !important;
+    background-color: white;
+}
+
+#title {
+    font-family: "Rammetto One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    color: #EC3C2C;
+    padding-top: 80px;
+
+
+}
+
+#container {
+    height: 80vh;
+    display: grid;
+    place-items: center;
+
+}
+
+#slider-container {
+    height: 400px;
+    width: 90vw;
+    max-width: 1400px;
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+
+
+}
+
+/* newmenu slider button */
+#slider-container .btn {
+    width: 0;
+    height: 0;
+    /* border-top: 25px solid transparent; */
+    /* border-right: 50px solid #555;
+	border-bottom: 25px solid transparent; */
+    position: absolute;
+    top: calc(50% - 30px);
+    border: 0px;
+    transform: scale(0.5);
+
+}
+
+#slide_right {
+    transform: rotate(180deg);
+    color: #EC3C2C;
+}
+
+#slide_left {
+    transform: rotate(360deg) translateX(-50px);
+    color: #EC3C2C;
+
+}
+
+#slide_left:hover {
+    color: #E9E9E9;
+}
+
+#slide_right:hover {
+    color: #E9E9E9;
+}
+
+/* #slider-container .btn.inactive {
+	border-color: #282828
+} */
+#slider-container .btn:first-of-type {
+    /* transform: rotate(-45deg); */
+    left: 10px
+}
+
+#slider-container .btn:last-of-type {
+    /* transform: rotate(135deg); */
+    right: 10px;
+}
+
+#slider-container #slider {
+    display: flex;
+    width: 1000%;
+    height: 100%;
+    transition: all .5s;
+}
+
+#slider-container #slider .slide {
+    height: 90%;
+    margin: auto 10px;
+    /* background-color: #b5b5b5; */
+    border-radius: 0px;
+    box-shadow: 2px 2px 4px 2px white, -2px -2px 4px 2px white;
+    display: grid;
+    place-items: center;
+}
+
+#slider-container #slider .slide span {
+    color: white;
+    font-size: 60px;
+}
+
+/* @media only screen and (min-width: 1100px) {
+	#slider-container #slider .slide {
+		width: calc(2.5% - 20px);
+	}
+}
+@media only screen and (max-width: 1100px) {
+	#slider-container #slider .slide {
+		width: calc(3.3333333% - 20px);
+	}
+}
+@media only screen and (max-width: 900px) {
+	#slider-container #slider .slide {
+		width: calc(5% - 20px);
+	}
+ } */
+@media only screen and (max-width: 500px) {
+    #slider-container #slider .slide {
+        width: calc(10% - 120px);
+    }
+}
+
+/* section1-bg*/
+/* #setion1container{
+    width: 100%;
+     margin: 0px; 
+    height: 950px;
+    background-image: url(./72ppi/dot.png);
+    background-repeat: no-repeat;
+    /* background-color: #EC3C2C; 
+    background-position: center center;
+    
+} */
+
+
+/* sec1-background 漸變點點*/
+.sec1container {
+    width: 100%;
+    height: 96vh;
+    position: relative;
+    background-color: #fff;
+    filter: contrast(7);
+    --mask: linear-gradient(to top, red, rgba(0, 0, 0, 0.5));
+    
+}
+
+
+
+.sec1container::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: radial-gradient(#EC3C2C, transparent) 0/0.5em 0.5em space;
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
+    content: "";
+
+}
+/* 圖片恢復正常濾鏡 */
+/* #img1 {
+    filter: contrast(15%);
+} */
+#container>div {
+    filter: contrast(15%);
+}
+
+
+/* section2-sticker */
+/* animation bar1 */
+
+#st1{
+    visibility: hidden;
+    transform:translateY(-1200px)translateX(10px)
+    rotate(10deg) ;
+    scale: 1.05;
+    
+}
+
+ .sticker1 {
+scale: 1.05;
+animation-name: st1;
+animation-duration:0.7s ;
+animation-timing-function:ease-out;
+/* animation-iteration-count:infinite; */
+animation-delay: 0.2s;
+animation-fill-mode: forwards;
+
+} 
+@keyframes st1{
+    0%{
+        transform:translateY(-1200px)translateX(10px)rotate(10deg);
+    }
+    90%{
+        transform:translateY(10px)translateX(5px)rotate(8deg);
+    }
+    95%{
+        transform:translateY(16px)translateX(0px)rotate(3deg);
+    }
+    100%{
+        transform:translateY(10px)translateX(6px)rotate(8deg);
+    }
+    
+}
+
+/* animation bar1 */
+#st2 {
+    visibility: hidden;
+    transform: translateY(-1600px) rotate(-5deg)translateX(3px) ;scale: 1.05;
+ } 
+ .sticker2{
+scale: 1.05;
+animation-name: st2;
+animation-duration:0.8s ;
+animation-timing-function:ease-out;
+/* animation-iteration-count:infinite; */
+animation-delay: 0.2s;
+animation-fill-mode: forwards;
+ }
+
+ @keyframes st2{
+    0%{
+        transform:translateY(-1600px) rotate(-10deg)translateX(3px) ;
+    }
+    90%{
+        transform:translateY(-52px) rotate(3deg)translateX(5px) ;
+    }
+    95%{
+        transform:translateY(-56px) rotate(5deg)translateX(3px) ;
+    }
+    100%{
+        transform:translateY(-70px) rotate(-3deg)translateX(3px) ;
+    }
+    
+}
+/* section2-Best menu */
+/* section-2 卡片區 */
+/* Best menu卡片設計 */
+.slide2 {
+
+    border: 5px solid;
+    border-color: #EC3C2C;
+    box-shadow: 7px 7px #EC3C2C !important;
+    margin-left: 0px !important;
+    margin-right: 27px !important;
+    padding-top: 50px !important;
+    background-color: white;
+}
+
+#title2 {
+    font-family: "Rammetto One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    color: #EC3C2C;
+    padding-top: 80px;
+
+
+}
+
+#container2 {
+    height: 80vh;
+    display: grid;
+    place-items: center;
+
+}
+
+#slider-container2 {
+    height: 400px;
+    width: 90vw;
+    max-width: 1400px;
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+
+
+}
+
+/*  slider2 button */
+#slider-container2 .btn {
+    width: 0;
+    height: 0;
+    /* border-top: 25px solid transparent; */
+    /* border-right: 50px solid #555;
+	border-bottom: 25px solid transparent; */
+    position: absolute;
+    top: calc(50% - 30px);
+    border: 0px;
+    transform: scale(0.5);
+
+}
+
+#slide_right2{
+    transform: rotate(180deg);
+    color: #EC3C2C;
+}
+
+#slide_left2{
+    transform: rotate(360deg) translateX(-50px);
+    color: #EC3C2C;
+
+}
+
+#slide_left2:hover {
+    color: #E9E9E9;
+}
+
+#slide_right2:hover {
+    color: #E9E9E9;
+}
+
+/* #slider-container .btn.inactive {
+	border-color: #282828
+} */
+#slider-container2 .btn:first-of-type {
+    /* transform: rotate(-45deg); */
+    left: 10px
+}
+
+#slider-container2 .btn:last-of-type {
+    /* transform: rotate(135deg); */
+    right: 10px;
+}
+
+#slider-container2 #slider2 {
+    display: flex;
+    width: 1000%;
+    height: 100%;
+    transition: all .5s;
+}
+
+#slider-container2 #slider2 .slide {
+    height: 90%;
+    margin: auto 10px;
+    /* background-color: #b5b5b5; */
+    border-radius: 0px;
+    box-shadow: 2px 2px 4px 2px white, -2px -2px 4px 2px white;
+    display: grid;
+    place-items: center;
+}
+
+#slider-container2 #slider2 .slide span {
+    color: white;
+    font-size: 60px;
+}
+
+/* @media only screen and (min-width: 1100px) {
+	#slider-container #slider .slide {
+		width: calc(2.5% - 20px);
+	}
+}
+@media only screen and (max-width: 1100px) {
+	#slider-container #slider .slide {
+		width: calc(3.3333333% - 20px);
+	}
+}
+@media only screen and (max-width: 900px) {
+	#slider-container #slider .slide {
+		width: calc(5% - 20px);
+	}
+ } */
+@media only screen and (max-width: 500px) {
+    #slider-container2 #slider2 .slide {
+        width: calc(10% - 120px);
+    }
+}
+
+
+
